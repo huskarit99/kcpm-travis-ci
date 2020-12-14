@@ -1,3 +1,11 @@
 language: node_js
 node_js:
- - "node"
+- node
+deploy:
+  provider: heroku
+  api_key:
+    secure: qiD1c8wLEm4GCR8nX2lKxp8le7WC27CZOzlCb+J5V42hBG6woKSh2NuJSpn7NarkIGCoZNoqZe4HvTXNPjXzTeFNS60Yk44PnC+cMkI6cuWCR0qhvX+CooGmGCExpt9VytlOUxZhSTqG4LQdB3TNp7RDVs+eVgbAk5Q6PqzsNgIfEnTfylHNEZikOU+GiDMvGpKk0EvfbUObK75+1ATvK32ixSA9ecm1w4qrw9VFeMTztFb+nb9I+e4Py+t98nL94IsnLP0O2OuAquwzQOsSirnnBZH+uuOjU5M1iDdtl/Y88BMd8+GcmKJjxTYmcRmNkRjqlS/7uXz9IvnW+G3wXc1S+JIhunp+T1g97/62BParprKebVgE1Go6z3oM3GLhaKRHWNWj8H3Ydd6Hfr0C5CYzGPDvpejZn4h69PrPJib0+yBL71GpXypBhosepH3LBpIN4RhZNdsgaFioS/J1Dq42EtIy68RuaTM+qlTRXUasPH2fD1G9CFnzQyrcgi4wJte4qcFRDjNSOIkIo3QeM1M/t+SNlMo0csHXAWLpzIxLjUDJoenwG5rl6dYQxvAXSK7/XReqAXuUOBNTI6x7c7+sY2WIXPr6mTl0ArEu5yuPE/+86CULka2JydK+78kpgoq2d3Jg95larQefa40bYlyA8el2P7rCL1mfPu4WGYM=
+  app: kcpm-travis-ci
+  on:
+    repo: huskarit99/kcpm-travis-ci
+  skip_cleanup: 'true'

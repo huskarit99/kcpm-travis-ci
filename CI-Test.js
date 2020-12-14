@@ -50,7 +50,7 @@ app.get('/bestStudent', function (req, res) {
   for (let i = 0; i < list.length; i++) {
     if (list[i].point === bestPoint) {
       bestStudent.push(list[i]);
-      // break;
+      break;
     }
   }
   res.send({ bestStudent: bestStudent });
