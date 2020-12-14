@@ -16,8 +16,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/numberStudent', function (req, res) {
-  // res.send({ numberStudent: Object.keys(listStudent).length });
-  res.send({ numberStudent: werkj });
+  res.send({ numberStudent: Object.keys(listStudent).length });
+  // res.send({ numberStudent: 'werkj' });
 });
 
 function compare(prop) {
@@ -50,7 +50,7 @@ app.get('/bestStudent', function (req, res) {
   for (let i = 0; i < list.length; i++) {
     if (list[i].point === bestPoint) {
       bestStudent.push(list[i]);
-      break;
+      // break;
     }
   }
   res.send({ bestStudent: bestStudent });
