@@ -17,7 +17,6 @@ app.get('/', function (req, res) {
 
 app.get('/numberStudent', function (req, res) {
   res.send({ numberStudent: Object.keys(listStudent).length });
-  // res.send({ numberStudent: 'werkj' });
 });
 
 function compare(prop) {
